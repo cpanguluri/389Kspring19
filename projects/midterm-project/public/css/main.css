@@ -1,1 +1,11 @@
-/* Please add your own! */
+body {
+	background-color: #e6f0ff;
+}
+header {
+	text-align: center;
+	font-size: 30px;
+    color: pink;
+    height: 300px;
+    border-style: solid;
+}
+

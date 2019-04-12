@@ -11,8 +11,16 @@
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.17.1",
+        "cors": "^2.8.5",
         "express": "^4.15.2",
         "express-handlebars": "^3.0.0",
-        "morgan": "^1.8.1"
+        "jquery": "^3.4.0",
+        "jsdom": "^14.0.0",
+        "marked": "^0.6.2",
+        "moment": "^2.24.0",
+        "mongo": "^0.1.0",
+        "mongoose": "^5.5.0",
+        "morgan": "^1.9.1",
+        "underscore": "^1.9.1"
     }
 }

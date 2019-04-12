@@ -1,1 +1,32 @@
-Home
+{{#if tag}}
+<h2>Restaurant List {{tag}}:</h2> 
+{{else}}
+<h2>Recent Restaurants Added</h2> 
+{{/if}}
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src = index.js></script>
+
+{{#each data}}
+<article>
+	<h2 class="title">{{this.title}}</h2> <i>{{time}}</i>
+	<hr>
+	<div class="content">
+	    Name: {{{this.name}}} </br>
+	    Location: {{{this.location}}} </br> 
+	    Price: {{{this.price}}} </br>
+	    Tags: {{{this.tags}}} </br>
+	    <div class = "review">
+	    Review: </br>
+	    <ol> Stars/5: {{{stars}}} </ol>
+	    <ol> Author: {{{author}}} </ol>
+	    <ol> Comment: {{{comment}}} </ol>
+	</div>
+</article>
+{{else}}
+
+<article>
+    <h1>There are no restaurants added yet :(</h1>
+    <a href="/add">Add the first restaurant!</a>
+</article>
+{{/each}}
