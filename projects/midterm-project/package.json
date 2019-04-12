@@ -22,5 +22,8 @@
         "mongoose": "^5.5.0",
         "morgan": "^1.9.1",
         "underscore": "^1.9.1"
+    },
+    "engines":{
+        "node": "11.10.0"   
     }
 }
